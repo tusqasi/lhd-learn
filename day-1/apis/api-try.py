@@ -12,7 +12,6 @@ print(" ".join(joke.split()))
 params_translate= {
         "text":joke
         }
-
-translated = requests.get(translate_url,params=params_translate)
+translated = requests.get(translate_url,params=params_translate)["translated"]
 
 print(translated)
