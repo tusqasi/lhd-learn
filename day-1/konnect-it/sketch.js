@@ -46,8 +46,8 @@ function drawBoard() {
 
     for (let j = 0; j < board[i].length; j++) {
 			fill(0,0,50);
-			rect(height - cellSize*j,j*cellSize,height,j*cellSize);
+			rect(height - cellSize*i,i*cellSize,height,i*cellSize);
     }
-      // console.log("\n");
+       
   }
 }
