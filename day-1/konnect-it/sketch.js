@@ -4,6 +4,7 @@ let board;
 let cellX;
 let cellY;
 let cellPressedX;
+
 function setup() {
   createCanvas(1330, 800);
   cellSize = 200;
@@ -42,8 +43,10 @@ function drawGrid() {
 
 function drawBoard() {
   for (let i = 0; i < board.length; i++) {
+
     for (let j = 0; j < board[i].length; j++) {
-      
+			fill(0,0,50);
+			rect(height - cellSize*j,j*cellSize,height,j*cellSize);
     }
       // console.log("\n");
   }
