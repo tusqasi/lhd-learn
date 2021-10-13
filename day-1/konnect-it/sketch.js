@@ -17,6 +17,9 @@ function setup() {
 }
 
 function mouseClicked(e) {
+	if (mouseX > cellX*cellSize){
+		return;
+	}
   cellPressedX = floor(mouseX / cellSize);
   board[cellPressedX].push(1);
 }
